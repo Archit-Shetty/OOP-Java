@@ -1,0 +1,27 @@
+name: Create Java Files
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs:
+  create_files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create Java files
+        run: |
+          echo 'public class AreaOfTriangle {}' > areaOfTriangle.java
+          echo 'public class CircleAreaUsingConstructor {}' > circleAreaUsingConstructor.java
+          echo 'public class CircleAreaUsingDot {}' > circleAreaUsingDot.java
+          echo 'public class CircleAreaUsingMethod {}' > circleAreaUsingMethod.java
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Add multiple Java files"
+          git push origin main
