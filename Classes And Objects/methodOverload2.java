@@ -19,7 +19,7 @@ class shapeAreaPerimeter {
     }
 }
 
-class shape2d {
+class methodOverload2.java {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter length = ");
