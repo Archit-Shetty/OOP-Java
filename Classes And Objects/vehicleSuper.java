@@ -21,7 +21,7 @@
 
 class vehicle {
     int maxSpeed;
-
+ 
     vehicle(int maxSpeed){
         this.maxSpeed = maxSpeed;
     }    
