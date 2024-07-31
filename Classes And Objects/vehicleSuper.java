@@ -51,7 +51,7 @@ class car extends vehicle{
     }
 }
 
-class superEx{
+class vehicleSuper{
     public static void main(String[] args) {
         car c1 = new car("ABC", 4, 100);
         c1.display();
