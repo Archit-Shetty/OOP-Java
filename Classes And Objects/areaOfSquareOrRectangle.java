@@ -1,6 +1,6 @@
 /* Create a java class name shape that has two different properties length and breadth and possess two different functionalities area and shapeName, 
 Considering this class extend the main class to showcase the working of two different shapes decided based on king of values supplied. */
-import java.util.Scanner;
+import java.util.Scanner; 
 
 class shapes{
     int l;
